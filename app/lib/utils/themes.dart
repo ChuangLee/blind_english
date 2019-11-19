@@ -20,7 +20,7 @@ final ThemeData darkTheme = new ThemeData(
     primaryTextTheme: new TextTheme(
       caption: new TextStyle(color: Colors.white),
       body2:
-          TextStyle(fontSize: 22.0, fontFamily: 'Hind', color: Colors.white30),
+          TextStyle(fontSize: 30.0, fontFamily: 'Hind', color: Colors.white30),
     ));
 
 final ThemeData lightTheme = new ThemeData(
@@ -39,5 +39,5 @@ final ThemeData lightTheme = new ThemeData(
     ),
     primaryTextTheme: new TextTheme(
       caption: new TextStyle(color: Colors.white),
-      body2: TextStyle(fontSize: 24.0, fontFamily: 'Hind', color: Colors.white),
+      body2: TextStyle(fontSize: 30.0, fontFamily: 'Hind', color: Colors.white),
     ));

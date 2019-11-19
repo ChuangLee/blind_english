@@ -43,7 +43,7 @@ class Player: NSObject {
     init(_ viewController: FlutterViewController) {
         self.viewController = viewController
         channel = FlutterMethodChannel(name: CHANNEL_NAME,
-                                       binaryMessenger: viewController)
+                                       binaryMessenger: viewController.binaryMessenger)
 
         super.init()
     }
