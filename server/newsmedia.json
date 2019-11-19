@@ -1,0 +1,23 @@
+{
+    "newsmedia": [
+        {
+            "id": 0,
+            "name": "NPR All Things Considered",
+            "description": "NPR 综合新闻，每天下午更新。",
+            "icon": "npr_all_things_considered.jpg"
+        },
+        {
+            "id": 1,
+            "name": "NPR Morning Edition",
+            "description": "NPR 早间新闻，每天早上更新。",
+            "icon": "npr_morning_edition.jpg"
+        },
+        {
+            "id": 2,
+            "name": "VOA Learning English",
+            "description": "VOA 经典慢速英语。",
+            "icon": "voa_learning_english.png"
+        }
+
+    ]
+}

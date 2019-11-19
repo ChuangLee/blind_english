@@ -1,0 +1,24 @@
+{
+    "datapath": "/home/kaka/disk/blind/operation/crawled/",
+    "newsmedia": [
+        {
+            "id":0,
+            "name": "NPR All Things Considered",
+            "crawledName": "NPR_AllThings",
+            "refreshTime": "15:40"
+        },
+        {
+            "id":1,
+            "name": "NPR Morning Edition",
+            "crawledName": "NPR_Morning",
+            "refreshTime": "5:40"
+        },
+        {
+            "id":2,
+            "name": "VOA Learning English",
+            "crawledName": "VOA_LearningEnglish",
+            "refreshTime": "1:10"
+        }
+
+    ]
+}
