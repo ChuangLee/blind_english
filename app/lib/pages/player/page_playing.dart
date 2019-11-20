@@ -401,7 +401,7 @@ class _TranscriptState extends State<_Transcript> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle style = Theme.of(context).primaryTextTheme.body2;
+    TextStyle style = Theme.of(context).textTheme.display1;
     TextStyle contentStyle = style.copyWith(
         color: style.color.withAlpha(200),
         fontSize: style.fontSize - 2,
@@ -521,8 +521,7 @@ class _CloudLyricState extends State<_CloudLyric> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle style =
-        Theme.of(context).primaryTextTheme.body2.copyWith(height: 1.1);
+    TextStyle style = Theme.of(context).textTheme.display1;
 
     if (state == 2) {
       //load success
