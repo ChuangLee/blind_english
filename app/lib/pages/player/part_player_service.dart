@@ -71,7 +71,7 @@ class MusicPlayer implements ValueNotifier<PlayerControllerState> {
         }
       });
       _controller.init(
-          playingList, current, token, playMode ?? PlayMode.sequence);
+          playingList, current, token, playMode ?? PlayMode.single);
     }();
   }
 

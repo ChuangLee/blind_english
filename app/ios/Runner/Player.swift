@@ -30,7 +30,7 @@ class Player: NSObject {
     }
 
     // 0单曲循环，1顺序，2随机，目前不支持随机
-    private var playMode: Int = 1
+    private var playMode: Int = 0
     private var token: String?
     private var initialized: Bool = false
     private var playWhenReady: Bool = false
@@ -100,7 +100,7 @@ class Player: NSObject {
 
                     self.playlist = args?["list"] as? [[String: Any]] ?? []
                     self.currentMusic = args?["music"] as? [String: Any]
-                    self.playMode = args?["playMode"] as? Int ?? 1
+                    self.playMode = args?["playMode"] as? Int ?? 0
                     self.initialized = true
                 }
             },
@@ -134,7 +134,7 @@ class Player: NSObject {
                 self.token = args?["token"] as? String
                 self.playlist = args?["list"] as? [[String: Any]] ?? []
                 //                self.currentMusic = args?["music"] as? Dictionary<String,Any>
-                self.playMode = args?["playMode"] as? Int ?? 1
+                self.playMode = args?["playMode"] as? Int ?? 0
                 result(nil)
             },
             "seekTo": {
@@ -213,7 +213,7 @@ class Player: NSObject {
         if currentMusic != nil {
             let currentIndex = self.currentIndex()
 
-            if currentIndex >= 0 || currentIndex < playlist.count - 2 {
+            if currentIndex >= 0 && currentIndex < playlist.count - 2 {
                 next = playlist[currentIndex + 1]
             }
         }

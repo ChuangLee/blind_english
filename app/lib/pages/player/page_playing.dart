@@ -531,7 +531,7 @@ class _CloudLyricState extends State<_CloudLyric> {
             lyric: music.lyric,
             lyricLineStyle: style.copyWith(
                 color: style.color.withAlpha(159),
-                fontSize: style.fontSize - 4,
+                fontSize: style.fontSize,
                 height: 1),
             highlightStyle: style.copyWith(color: Colors.white),
             position: position,

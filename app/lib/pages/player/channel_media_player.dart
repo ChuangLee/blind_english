@@ -46,7 +46,7 @@ class PlayerControllerState {
       this.current,
       this.playingList = const [],
       this.token,
-      this.playMode = PlayMode.sequence,
+      this.playMode = PlayMode.single,
       this.errorMsg = _ERROR_NONE});
 
   static const String _ERROR_NONE = "NONE";
@@ -247,7 +247,7 @@ class PlayerController extends ValueNotifier<PlayerControllerState> {
       currentTime = lyric.findTimeStampByLine(currentLine);
       while (currentLine >= 1) {
         //播放有延迟多回退0.7s
-        seekTo = lyric.findTimeStampByLine(--currentLine) - 700;
+        seekTo = lyric.findTimeStampByLine(currentLine--) - 700;
         if (currentTime - seekTo > 3500) break;
       }
     }
