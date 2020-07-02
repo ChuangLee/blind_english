@@ -78,7 +78,7 @@ func main() {
 }
 
 func RunCrawler(args []string, dateStr string) error {
-	ShellCmdTimeout(600, "./BlindCrawler", args...)
+	ShellCmdTimeout(60*20, "./BlindCrawler", args...)
 	// ShellCmdTimeout(600, "./BlindCrawler", "-_ui=cmd", "-c_spider=0,1", "-a_mode=0")
 	if !Exists(crawledPath) {
 		return errors.New("crawledPath does't exists!")
@@ -150,7 +150,7 @@ func AlignAudio(savedPath string) error {
 				"task_language=eng|is_text_type=plain|os_task_file_format=aud",
 				outputName,
 			}
-			ShellCmdTimeout(60, "python", args_aeneas...)
+			ShellCmdTimeout(60*5, "python", args_aeneas...)
 		}
 		return nil
 	})
