@@ -6,11 +6,11 @@ import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Build
-import android.support.annotation.VisibleForTesting
-import android.support.v4.app.NotificationCompat
-import android.support.v7.graphics.Palette
-import android.support.v7.graphics.Target.MUTED
-import android.support.v7.graphics.Target.VIBRANT
+import androidx.annotation.VisibleForTesting
+import androidx.core.app.NotificationCompat
+import androidx.palette.graphics.Palette
+import androidx.palette.graphics.Target.MUTED
+import androidx.palette.graphics.Target.VIBRANT
 import com.google.android.exoplayer2.Player
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -158,7 +158,7 @@ class MusicNotification {
 
     private fun NotificationCompat.Builder.buildStep1(): NotificationCompat.Builder {
         setShowWhen(true)
-        val mediaStyle = android.support.v4.media.app.NotificationCompat.MediaStyle()
+        val mediaStyle = androidx.media.app.NotificationCompat.MediaStyle()
                 .setShowActionsInCompactView(0, 1, 2)
         setStyle(mediaStyle)
         setSmallIcon(R.drawable.ic_music_note_black_24dp)
