@@ -95,7 +95,7 @@ class SongListHeader extends StatelessWidget {
             Padding(padding: EdgeInsets.only(left: 4)),
             Text(
               "播放全部",
-              style: Theme.of(context).textTheme.body1,
+              style: Theme.of(context).textTheme.bodyText2,
             ),
             Padding(padding: EdgeInsets.only(left: 2)),
             Text(
@@ -158,7 +158,7 @@ class SongTile extends StatelessWidget {
           child: Center(
             child: Text(
               index.toString(),
-              style: Theme.of(context).textTheme.body2,
+              style: Theme.of(context).textTheme.bodyText1,
             ),
           ),
         );
@@ -210,7 +210,7 @@ class SongTile extends StatelessWidget {
                           music.title,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                         ),
                         Padding(padding: EdgeInsets.only(top: 3)),
                         Text(
@@ -229,15 +229,15 @@ class SongTile extends StatelessWidget {
                       ),
                       itemBuilder: (context) =>
                           <PopupMenuItem<SongPopupMenuType>>[
-                            PopupMenuItem(
-                              child: Text("下一首播放"),
-                              value: SongPopupMenuType.addToNext,
-                            ),
-                            PopupMenuItem(
-                              child: Text("评论"),
-                              value: SongPopupMenuType.comment,
-                            ),
-                          ],
+                        PopupMenuItem(
+                          child: Text("下一首播放"),
+                          value: SongPopupMenuType.addToNext,
+                        ),
+                        PopupMenuItem(
+                          child: Text("评论"),
+                          value: SongPopupMenuType.comment,
+                        ),
+                      ],
                       onSelected: (SongPopupMenuType type) {
                         switch (type) {
                           case SongPopupMenuType.addToNext:

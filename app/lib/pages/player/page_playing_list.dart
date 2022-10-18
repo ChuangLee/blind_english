@@ -31,14 +31,14 @@ class PlayingListDialog extends StatelessWidget {
         height: 48,
         child: Row(
           children: <Widget>[
-            FlatButton.icon(
+            TextButton.icon(
                 onPressed: () {
                   quiet.changePlayMode();
                 },
                 icon: Icon(icon),
                 label: Text("$name($count)")),
             Spacer(),
-            FlatButton.icon(
+            TextButton.icon(
                 onPressed: null,
                 icon: Icon(Icons.add_box),
                 label: Text("收藏全部")),
@@ -105,7 +105,7 @@ class _MusicTile extends StatelessWidget {
     Widget leading;
     Color name, artist;
     if (playing) {
-      Color color = Theme.of(context).textTheme.display3.color;
+      Color color = Theme.of(context).textTheme.headline2.color;
       leading = Container(
         margin: EdgeInsets.only(right: 4),
         child: Icon(
@@ -118,7 +118,7 @@ class _MusicTile extends StatelessWidget {
       artist = color;
     } else {
       leading = Container();
-      name = Theme.of(context).textTheme.body2.color;
+      name = Theme.of(context).textTheme.bodyText1.color;
       artist = Theme.of(context).textTheme.caption.color;
     }
 
@@ -144,7 +144,7 @@ class _MusicTile extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context)
                         .textTheme
-                        .body1
+                        .bodyText2
                         .copyWith(color: name))),
             IconButton(
                 icon: Icon(Icons.close),

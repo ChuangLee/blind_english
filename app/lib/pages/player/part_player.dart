@@ -34,7 +34,7 @@ class BottomControllerBar extends StatelessWidget {
     return InkWell(
       onTap: () {
         if (music != null) {
-           Navigator.pushNamed(context, ROUTE_PAYING);
+          Navigator.pushNamed(context, ROUTE_PAYING);
         }
       },
       child: Card(
@@ -47,7 +47,10 @@ class BottomControllerBar extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             border: Border(
-              top: BorderSide(width: 1.0, color: Theme.of(context).dividerColor,),
+              top: BorderSide(
+                width: 1.0,
+                color: Theme.of(context).dividerColor,
+              ),
             ),
           ),
           height: 68,
@@ -78,7 +81,7 @@ class BottomControllerBar extends StatelessWidget {
                     Text(
                       music.title,
                       maxLines: 4,
-                      style: Theme.of(context).textTheme.body1,
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
 //                    Padding(padding: const EdgeInsets.only(top: 2)),
 //                    Text(
@@ -122,7 +125,7 @@ class BottomControllerBar extends StatelessWidget {
                     showModalBottomSheet(
                         context: context,
                         builder: (context) {
-                           return PlayingListDialog();
+                          return PlayingListDialog();
                         });
                   }),
             ],

@@ -214,7 +214,7 @@ class _DurationProgressBarState extends State<_DurationProgressBar> {
           Slider(
             value: position.toDouble().clamp(0.0, duration.toDouble()),
             min: 0.0,
-            activeColor: theme.body1.color.withOpacity(0.75),
+            activeColor: theme.bodyText2.color.withOpacity(0.75),
             inactiveColor: theme.caption.color.withOpacity(0.3),
             max: duration.toDouble(),
             onChangeStart: (value) {
@@ -247,13 +247,13 @@ class _DurationProgressBarState extends State<_DurationProgressBar> {
       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 16),
       child: Row(
         children: <Widget>[
-          Text(positionText ?? "00:00", style: theme.body1),
+          Text(positionText ?? "00:00", style: theme.bodyText2),
           Padding(padding: EdgeInsets.only(left: 4)),
           Expanded(
             child: progressIndicator,
           ),
           Padding(padding: EdgeInsets.only(left: 4)),
-          Text(durationText ?? "00:00", style: theme.body1),
+          Text(durationText ?? "00:00", style: theme.bodyText2),
         ],
       ),
     );
@@ -401,7 +401,7 @@ class _TranscriptState extends State<_Transcript> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle style = Theme.of(context).textTheme.display1;
+    TextStyle style = Theme.of(context).textTheme.headline4;
     TextStyle contentStyle = style.copyWith(
         color: style.color.withAlpha(200),
         fontSize: style.fontSize - 2,
@@ -521,7 +521,7 @@ class _CloudLyricState extends State<_CloudLyric> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle style = Theme.of(context).textTheme.display1;
+    TextStyle style = Theme.of(context).textTheme.headline4;
 
     if (state == 2) {
       //load success
@@ -727,7 +727,7 @@ class _AlbumCoverState extends State<_AlbumCover>
 class _BlurBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var music = PlayerState.of(context).value.current;
+    // var music = PlayerState.of(context).value.current;
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
@@ -758,7 +758,8 @@ class _PlayingTitle extends StatelessWidget {
             color: Theme.of(context).primaryIconTheme.color,
           ),
           onPressed: () => Navigator.pop(context)),
-      title: Text(music != null ? music.title : "no title", maxLines: 2),
+      title: Text(music != null ? music.title : "no title",
+          style: Theme.of(context).textTheme.headline3, maxLines: 3),
       backgroundColor: Colors.transparent,
       // centerTitle: false,
       actions: <Widget>[

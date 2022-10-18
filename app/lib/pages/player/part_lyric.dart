@@ -210,7 +210,8 @@ class LyricPainter extends ChangeNotifier implements CustomPainter {
 
       if (line == currentLine) {
         painter = TextPainter(
-            text: TextSpan(text: painter.text.text, style: styleHighlight),
+            text: TextSpan(
+                text: painter.text.toPlainText(), style: styleHighlight),
             textAlign: textAlign);
         painter.textDirection = TextDirection.ltr;
         painter.layout(maxWidth: size.width - padding * 2);

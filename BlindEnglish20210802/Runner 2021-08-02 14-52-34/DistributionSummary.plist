@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blind_english.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+				<key>dateExpires</key>
+				<string>2022/7/21</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>App.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>FMDB.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Flutter.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>audioplayer.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>path_provider.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>shared_preferences.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>496D1C514FFF515A549A3A5C5AA093E5154AA17E</string>
+						<key>dateExpires</key>
+						<string>2022/7/21</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>sqflite.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>FHTTY6RRNL</string>
+						<key>name</key>
+						<string>China Financial Certification Authority Co., Ltd</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>FHTTY6RRNL.com.cfca.blindEnglish</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>FHTTY6RRNL</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>FHTTY6RRNL.com.cfca.blindEnglish</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Runner.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>7dd5bd6e-a4f2-41ec-8f6b-705156a05342</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.cfca.blindEnglish</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>FHTTY6RRNL</string>
+				<key>name</key>
+				<string>China Financial Certification Authority Co., Ltd</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

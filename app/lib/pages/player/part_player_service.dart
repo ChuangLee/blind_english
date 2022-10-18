@@ -255,7 +255,8 @@ class PlayerState extends InheritedModel<PlayerStateAspect> {
   final PlayerControllerState value;
 
   static PlayerState of(BuildContext context, {PlayerStateAspect aspect}) {
-    return context.inheritFromWidgetOfExactType(PlayerState, aspect: aspect);
+    return context.dependOnInheritedWidgetOfExactType();
+    // return context.inheritFromWidgetOfExactType(PlayerState, aspect: aspect);
   }
 
   @override

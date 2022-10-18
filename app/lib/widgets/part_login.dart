@@ -1,3 +1,10 @@
+/*
+ * @Author: lichuang
+ * @Date: 2019-02-12 16:15:09
+ * @LastEditors: lichuang
+ * @@Copyright: (c) 2018 CFCA [http://www.cfca.com.cn] All rights reserved.
+ * @Description: 
+ */
 import 'package:flutter/material.dart';
 
 ///登录状态
@@ -5,7 +12,8 @@ import 'package:flutter/material.dart';
 class LoginState extends InheritedWidget {
   ///根据BuildContext获取 [LoginState]
   static LoginState of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(LoginState);
+    return context.dependOnInheritedWidgetOfExactType();
+    // return context.inheritFromWidgetOfExactType(LoginState);
   }
 
   LoginState(this.user, this.child) : super(child: child);

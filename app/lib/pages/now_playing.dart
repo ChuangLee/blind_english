@@ -148,7 +148,7 @@ class _NowPlayingState extends State<NowPlaying> {
             children: <Widget>[
               new Text(
                 song.title,
-                style: Theme.of(context).textTheme.headline,
+                style: Theme.of(context).textTheme.headline5,
               ),
               new Text(
                 song.artist,

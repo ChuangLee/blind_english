@@ -10,7 +10,8 @@ class NewsInheritedWidget extends InheritedWidget {
       : super(child: child);
 
   static NewsInheritedWidget of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(NewsInheritedWidget);
+    // return context.inheritFromWidgetOfExactType(NewsInheritedWidget);
+    return context.dependOnInheritedWidgetOfExactType();
   }
 
   @override
